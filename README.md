@@ -1,6 +1,6 @@
-➡️ Pipe
+# ➡️ Pipe Py
 
-Functional piping.
+### Functional piping for Python.
 
 - Easy
 - Clear

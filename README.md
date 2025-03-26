@@ -9,13 +9,15 @@
 ## Usage
 ### Example
 
-```
+```python
 pipe(
   str.lower,
   str.title,
   str.split
 )('WHY, HELLO THERE! 🐰')
-```
+``` 
 ### Returns
 
-`['Why,', 'Hello', 'There!', '🐰']`
+```python
+['Why,', 'Hello', 'There!', '🐰']
+```

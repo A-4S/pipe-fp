@@ -18,7 +18,7 @@ def pipe(*f: Callable) -> Callable:
     
     **Returns**
     >>> title_case('WHY, HELLO THERE! 😊')
-    >>> ['Why,', 'Hello', 'There!', '😊']
+    ['Why,', 'Hello', 'There!', '😊']
     """
 
     return lambda x: reduce(lambda a, f: f(a), f, x)

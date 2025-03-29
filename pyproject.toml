@@ -1,6 +1,6 @@
 [project]
 name = "pipe-py"
-version = "1.1.0"
+version = "1.1.1"
 description = "Functional piping for Python. ➡️"
 license = "MIT"
 authors = [
@@ -12,7 +12,7 @@ keywords = [
     "utility"
 ]
 readme = "README.md"
-requires-python = "^3.10"
+requires-python = ">=3.10"
 dynamic = [ "classifiers" ]
 
 [tool.poetry]

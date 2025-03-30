@@ -1,4 +1,4 @@
-# ➡️ Pipe Py
+# ➡️ Pipe fp
 
 ### Functional piping for Python.
 
@@ -10,6 +10,9 @@
 ### Example
 
 ```python
+from pipefp import pipe
+
+
 pipe(
   str.lower,
   str.title,

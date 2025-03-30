@@ -1,4 +1,4 @@
-from pipepy import pipe
+from pipefp import pipe
 
 
 def test_pipe():

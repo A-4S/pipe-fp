@@ -1,1 +1,1 @@
-from pipefp.pipe import pipe
+from .pipe import pipe

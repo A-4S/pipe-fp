@@ -14,9 +14,9 @@ class pipe(Generic[T0]):
     .. code-block:: python
         def title_case(msg: str) -> list[str]:
             return pipe[str](
-                str.lower,
-                str.title,
-                str.split
+                lambda msg: msg.lower(),
+                lambda msg: msg.title(),
+                lambda msg: msg.split()
             )(msg)
 
     **Returns**

@@ -11,8 +11,14 @@ Piping is a method targeting code composition style, taking input data and passi
 
 ## Usage
 Pipe fp is a tool to compose code in a simple, clear, and concise manner.
-### Example
 
+## Features
+- Composable pipelines; build it
+- Lazy evaluation; call any time later
+- lambda functions with type hinting via generics!
+
+## Example
+### Without Generics
 ```python
 from pipe_fp import pipe
 
@@ -22,9 +28,27 @@ pipe(
   str.title,
   str.split
 )('WHY, HELLO THERE! 🐰')
-``` 
-### Returns
+```
 
+### Returns
+```python
+['Why,', 'Hello', 'There!', '🐰']
+```
+
+### Using Generics
+```python
+from pipe_fp import pipe
+
+
+# msg will be of type str; not Any! 😲
+pipe[str](
+  lambda msg: msg.lower(),
+  lambda msg: msg.title(),
+  lambda msg: msg.split()
+)('WHY, HELLO THERE! 🐰')
+``` 
+
+### Returns
 ```python
 ['Why,', 'Hello', 'There!', '🐰']
 ```

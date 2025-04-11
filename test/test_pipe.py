@@ -11,5 +11,5 @@ def test_pipe():
     def minus_3(x: int) -> int:
         return x - 3
     
-    assert pipe(add_1, mult_2, minus_3)(3) == 5
-    assert pipe(mult_2, mult_2, mult_2)(1) == 8
+    assert pipe(add_1, mult_2, minus_3)(3) == minus_3(mult_2(add_1(3))) == 5
+    assert pipe(mult_2, mult_2, mult_2)(1) == mult_2(mult_2(mult_2(1))) == 8

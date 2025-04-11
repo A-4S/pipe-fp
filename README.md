@@ -13,9 +13,9 @@ Piping is a method targeting code composition style, taking input data and passi
 Pipe fp is a tool to compose code in a simple, clear, and concise manner.
 
 ## Features
-- Composable pipelines; build it
-- Lazy evaluation; call any time later
-- lambda functions with type hinting via generics!
+- Composable pipelines; build it.
+- Lazy evaluation; call any time later.
+- Lambda functions with type hinting via generics! ✨
 
 ## Example
 ### Without Generics

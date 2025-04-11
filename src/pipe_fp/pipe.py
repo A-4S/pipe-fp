@@ -1,4 +1,4 @@
-from collections.abc import Callable, Iterable
+from collections.abc import Callable
 from functools import reduce
 from typing import Any, Generic, overload
 
